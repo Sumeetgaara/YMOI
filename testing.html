@@ -1,0 +1,207 @@
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="handheld.css" type="text/css" media="handheld"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+
+
+<style>
+body{
+    background-color:#9E9E9E ;
+}
+
+
+
+h1{
+   font-family: 'Josefin Slab', serif;
+    font-size: 50px;
+	text-align: center;
+
+}
+p{
+   font-family: 'Josefin Slab', serif;
+    font-size: 35px;
+	text-align: center;
+
+}
+#myInput
+{
+background: #333;
+color: #ccc;
+width: 200px;
+padding: 6px 15px 6px 35px;
+transition: 500ms all ease;
+border: 1px solid #333;
+}
+#myInput:hover
+{
+
+box-shadow: 12px 13px 0px rgba(204, 211, 51, 0.38),
+-11px -14px 0px rgba(241, 96, 0, 0.28),
+18px -24px 0px rgba(0, 0, 0, 0.34),
+33px -6px 0px rgba(39, 74, 214, 0.28);
+}
+
+#lol
+{
+width: 100px;
+height: 21px;
+border: 1px ;
+background-color:#FFFFFF;
+}
+#lol:hover
+{
+width: 100px;
+height: 21px;
+border: 1px ;
+background-color:#D7CCC8;
+color:#000;
+}
+</style>
+
+</head>
+<body>
+<h1>Medicine Name(caps off)</h1>
+<br>
+<br>
+<br>
+
+
+
+<center><input id="myInput" type="text" name="questioncontent" onchange="return trim(this)"/></center><br>
+
+<center><button onclick="myFunction()" type="submit" id="lol">Enter</button></center>
+
+<p id="demo"></p>
+
+<script>
+function trim(el) {
+    el.value = el.value.
+    replace(/(^\s*)|(\s*$)/gi, ""). // removes leading and trailing spaces
+    replace(/[ ]{2,}/gi, " "). // replaces multiple spaces with one space 
+    replace(/\n +/, "\n"); // Removes spaces after newlines
+    return;
+}
+
+
+
+
+
+
+
+function myFunction() {
+    var text;
+    var k;
+	var i;
+    var fruits = document.getElementById("myInput").value;
+
+
+  
+
+var acar=["abacus","acarex","acarwin","acraz","asucrose","diabose","glucobay","discarb","abacus 50","acarwin 50","disorb","acarbose","lol","adelphane","adelphane esidrex","delphane","genophane","sarpalzino","lol","artere","cardace ","cardiopril","conram","cordimil","corpril","dexace","ecator","g-pril","gopril","gr pace","hopace tab","hoperam","kepry","megapril","misry","ramipril","lol3","aneket","gb -ket","hypnoket","keta","keta -v","ketafast","ketalar","ketalin","ketam","ketamax","ketamine","ketamine hydrochloride","ketared","ketasol","ketmin","ketolide","ketotal","ketsia","kety","kmine-50","oblar-50","rekita","taurket","verket",
+"efficin",
+"kanamac",
+"kanamycin",
+"kancin",
+"kaycin",
+"neokanyn 750",
+"lol1",
+"costead",
+"ubiquinone",
+"lol5",
+"cadiwin",
+"forstar inj",
+"fortagesic",
+"fortstar",
+"fortwin",
+"fortwin inj",
+"laptol",
+"pantazocine lactate",
+"pentalab",
+"pentawin",
+"pentazocine",
+"penzyl",
+"pzocin",
+"riddof",
+"susevin",
+"tozine",
+"verpen",
+"wintal",
+"zocin",
+"lol7",
+"dispirin",
+"algina",
+"brocin", 
+"cofamol", 
+"crocin", 
+"febrex",
+"geemol",
+"himol",
+"kelvin",
+"reemol",
+"paracetamol",
+
+];
+for (var i = 0; i < acar.length; i++) {
+    if (fruits == acar[i] && i < 12) {
+        text="<a href=acarbose.html>Click here to get detailed info about</a>  "  + acar[i];
+    }
+    if (fruits == acar[i] && (i > 11 && i < 18)) {
+        text="<a href=reserpine.html>Click here to get detailed info about</a>  "  + acar[i];
+    }
+	if (fruits == acar[i] && (i > 17 && i < 36)) {
+        text="<a href=ramipril.html>Click here to get detailed info about</a>  "  + acar[i];
+    }
+	if (fruits == acar[i] && (i > 35 && i < 61)) {
+        text="<a href=ketamine.html>Click here to get detailed info about</a>  "  + acar[i];
+    }
+	
+	if (fruits == acar[i] && (i > 60 && i < 67)) {
+        text="<a href=kanamycin.html>Click here to get detailed info about</a>  "  + acar[i];
+    }
+	
+	if (fruits == acar[i] && (i > 66 && i < 70)) {
+        text="<a href=ubiquinone.html>Click here to get detailed info about</a>  "  + acar[i];
+    }
+	
+	if (fruits == acar[i] && (i > 69 && i < 90)) {
+        text="<a href=pentazocine.html>Click here to get detailed info about</a>  "  + acar[i];
+    }
+	
+	if (fruits == acar[i] && (i > 89 && i < 102)) {
+        text="<a href=paracetamol.html>Click here to get detailed info about</a>  "  + acar[i];
+    }
+   
+   
+   
+   
+   
+}
+
+document.getElementById("demo").innerHTML =text;
+
+
+	
+
+}
+
+
+ </script>
+
+
+
+
+
+
+
+ 
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
